@@ -1,0 +1,45 @@
+#wppack_comments {
+  .write_comment {
+    background: #f1f1f1;
+    padding: 2rem;
+  }
+  textarea {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* 
+  * ul.commentlist.reset
+  *
+  */
+
+  .commenter_figure {
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .comment-date {
+    font-size: 88%;
+    opacity: 0.6;
+    font-style: italic;
+  }
+  cite.fn.commenter_name {
+    font-weight: 500 !important;
+    font-size: 110%;
+    font-style: normal;
+  }
+  a.comment-reply-link {
+    text-decoration: underline;
+    opacity: 0.6;
+    font-size: 88%;
+  }
+
+  ul.commentlist {
+    li {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e8e8e8;
+      list-style: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "wppack",
+  "version": "0.1.0",
+  "description": "Wordpress starter pack",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "test": "echo hi",
+    "start": "node build/server",
+    "build": "node build/build",
+    "git": "git add . && git push && git push --tags",
+    "v:major": "npm version major && npm run git",
+    "v:minor": "npm version minor && npm run git",
+    "v:patch": "npm version patch && npm run git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.27.9",
+    "browserlist": "^1.0.1",
+    "cssnano": "^5.0.4",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.0",
+    "postcss-sort-media-queries": "^3.10.11",
+    "rollup": "^2.48.0",
+    "terser": "^5.7.0"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kableDev/wppack.git"
+  },
+  "keywords": [
+    "wordpress starter library"
+  ],
+  "author": "Kable <kable.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kableDev/wppack/issues"
+  },
+  "homepage": "https://github.com/kableDev/wppack#readme"
+}
