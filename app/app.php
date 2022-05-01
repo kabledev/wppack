@@ -3,9 +3,9 @@
 /**
  * WPPack App
  *
- * @see https://github.com/sivankanat/wppack
  * @package wppack
  * @since 1.0.0
+ * @see https://github.com/kabledev/wppack
  *
  */
 

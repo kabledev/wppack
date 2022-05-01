@@ -1,11 +1,11 @@
 <?php
 
 /**
- * WPPack Custom post types and meta boxes
+ * WPPack Custom post types
  *
  * @package wppack
- * @author <sivankanat@gmail.com>
- * @since 1.0.1
+ * @author <kable.dev@gmail.com>
+ * @since 1.0.2
  * 
  *  supports: "title", "editor", "thumbnail", "excerpt", "trackbacks", "custom-fields", "comments", "revisions", "author", "page-attributes", "post-formats"
  *
@@ -16,15 +16,15 @@ class AppCPT extends App
 
   public function __construct()
   {
-    add_action('init', array($this, 'cpt_register'));
-    if (is_admin()) :
-    endif;
+    // add_action('init', array($this, 'cpt_register'));
+    // if (is_admin()) :
+    // endif;
   }
 
   public function cpt_register()
   {
     register_post_type("book", $this->cpt_conf(array(
-      "label" => "My Books", // Menude görünen
+      "label" => "My Books", // Label
       "plural" => "Books", // eg: All Books
       "single" => "Book", // eg: All Books
       "slug" => "book", // eg: site.com/book/
@@ -46,7 +46,7 @@ class AppCPT extends App
   {
     $opts = (object) $opts;
     $args =  array(
-      "label" => __("Books", $this->textdomain),
+      "label" => __($opts->label, $this->textdomain),
       "labels" => [
         "name" => __($opts->plural, $this->textdomain),
         "singular_name" => __($opts->single, $this->textdomain),

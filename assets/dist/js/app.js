@@ -1,4 +1,4 @@
-/**! WPPack 0.7.0 | https://github.com/kableDev/wppack | MIT */
+/**! WPPack 0.8.0 | https://github.com/kableDev/wppack | MIT */
 
 'use strict';
 
